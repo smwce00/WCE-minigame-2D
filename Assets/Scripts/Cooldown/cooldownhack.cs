@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SkillCooldown_Cool2D : MonoBehaviour
+public class cooldownhack : MonoBehaviour
 {
     public Text timerText;              //Demo UI elements
 
@@ -19,7 +19,7 @@ public class SkillCooldown_Cool2D : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cooldown1 = 15f;
+        cooldown1 = 2f;
         isCooldown = false;
         skillImage1.fillAmount = 0;
     }
@@ -40,7 +40,8 @@ public class SkillCooldown_Cool2D : MonoBehaviour
             cooldownTimer = 0;
         }
 
-        if (cooldownTimer == 0) {
+        if (cooldownTimer == 0)
+        {
             timerText.text = " ";
         }
     }
